@@ -2,7 +2,6 @@
 title: temp_md_title
 date: "2023-01-10"
 description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis deserunt ex blanditiis corrupti voluptates modi cumque officiis enim magnam totam atque iste provident nesciunt iure eveniet minus doloribus, pariatur laborum.
-slug: temp-md-slug
 category: temp-cate
 tags:
   - temp

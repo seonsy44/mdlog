@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { GetStaticProps } from "next";
 
 import { getAllPost } from "../services/posts";
@@ -9,8 +10,15 @@ type Props = {
 };
 
 export default function Home({ posts }: Props) {
-  console.log(posts);
-  return <>hello</>;
+  return (
+    <ul>
+      {posts.map((post) => (
+        <li key={post.slug}>
+          <Link href={`posts/${post.slug}`}>{post.title}</Link>
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 export const getStaticProps: GetStaticProps = async () => {

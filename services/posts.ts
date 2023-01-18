@@ -21,6 +21,7 @@ export function getPostByFilename(filename: string, fields: Fields[]) {
 
   fields.forEach((field) => {
     if (field === "content") items[field] = content;
+    else if (field === "slug") items["slug"] = realFilename;
     else if (data[field] !== undefined) items[field] = data[field];
   });
 
